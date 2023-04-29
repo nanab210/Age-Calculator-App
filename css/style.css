@@ -2,25 +2,30 @@
 
 html,
 body {
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   background-color: #f0f0f0;
 }
 
 .container {
-  width: 50%;
+  width: 45%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-flow: column;
   border: 1px solid #f0f0f0;
-  border-radius: 10px;
+  border-radius: 20px;
   border-bottom-right-radius: 150px;
   background-color: #ffffff;
 }
 
 form {
   color: gray;
+  display: flex;
+  justify-content: flex-start;
+}
+
+form div {
+  width: 23%;
 }
 
 label {
@@ -33,12 +38,37 @@ label {
 input {
   font-size: 32px;
   border-radius: 5px;
-  width: 120px;
+  width: 110px;
   border: 1px solid lightgrey;
 }
 
+.break-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.break-line hr {
+  width: 90%;
+  border-top: 1px solid lightgray;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+button {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: none;
+}
+
 .result {
-  font-size: 96px;
+  font-size: 86px;
   font-weight: 800;
   font-style: italic;
   line-height: 0;
@@ -47,10 +77,35 @@ input {
 span {
   color: hsl(259, 100%, 65%);
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*----- Margins & Padding -----*/
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  padding: 40px;
+}
+
+form {
+  margin-bottom: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.break-line {
+}
+
+.result {
 }
