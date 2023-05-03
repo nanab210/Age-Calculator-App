@@ -57,6 +57,7 @@ input {
 
 .break-line hr {
   flex: 1;
+
   border-top: 1px solid lightgray;
   border-bottom: none;
   border-left: none;
@@ -72,6 +73,10 @@ button {
   width: 80px;
   height: 80px;
   border: none;
+}
+
+button :hover {
+  cursor: pointer;
 }
 
 .result {
@@ -111,12 +116,6 @@ label {
 
 input {
   padding: 6px;
-}
-
-.break-line {
-}
-
-.result {
 }
 
 @media only screen and (min-width: 1200px) {
@@ -160,7 +159,7 @@ input {
 
   .break-line {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -178,6 +177,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 80px;
     height: 80px;
     border: none;
@@ -225,8 +225,6 @@ input {
   }
 
   .break-line {
-  }
-
-  .result {
+    margin-top: 15px;
   }
 }
